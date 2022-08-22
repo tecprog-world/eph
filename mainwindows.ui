@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>707</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Software de Evapotranspiración</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Evapotranspiración Potencial&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Esquema 01</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="title">
+               <string>Datos</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <item>
+                    <widget class="QLabel" name="label_2">
+                     <property name="text">
+                      <string>Temperatura máxima {°C}</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_3">
+                     <property name="text">
+                      <string>Temperatura media {°C}</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_4">
+                     <property name="text">
+                      <string>Temperatura mínima {°C}</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>Hemisferio</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_5">
+                     <property name="text">
+                      <string>Seleccione el mes (0-12)</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string>Latitud Norte</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_7">
+                     <property name="text">
+                      <string>Coeficiente KT</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_2"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_3"/>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_4">
+                     <item>
+                      <property name="text">
+                       <string>Sur</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Norte</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox">
+                     <item>
+                      <property name="text">
+                       <string>Enero</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Febrero</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Marzo</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Abril</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mayo</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Junio</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Julio</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Agosto</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Septiembre</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Octubre</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Noviembre</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Diciembre</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_2">
+                     <item>
+                      <property name="text">
+                       <string>70</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>68</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>66</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>64</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>62</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>60</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>58</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>56</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>54</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>52</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>50</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>48</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>46</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>44</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>42</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>40</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>38</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>36</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>34</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>32</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>30</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>28</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>26</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>24</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>22</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>20</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>18</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>16</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>14</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>12</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>10</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>08</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>06</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>04</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>02</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>00</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_3">
+                     <item>
+                      <property name="text">
+                       <string>0.162 para interiores</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>0.190 para regiones costeras</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="title">
+               <string>Operación</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="0" column="0">
+                <widget class="QPushButton" name="pushButton">
+                 <property name="text">
+                  <string>Ejecutar</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="title">
+               <string>Respuesta</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <item>
+                    <widget class="QLabel" name="label_9">
+                     <property name="text">
+                      <string>Rs</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_10">
+                     <property name="text">
+                      <string>Rt</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_4"/>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_5">
+                     <property name="readOnly">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Esquema 02</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
